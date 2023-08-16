@@ -39,7 +39,7 @@ class Messenger:
         header = None
 
         mail = imaplib.IMAP4_SSL(self.GMAIL_IMAP)
-        mail.login(login, password)
+        mail.login(self.login, self.password)
         mail.list()
         mail.select("inbox")
 
